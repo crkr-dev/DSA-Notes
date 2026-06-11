@@ -37,14 +37,14 @@ Intuition (Brute Force)
 
 The simplest way is to rotate the array by one position, d times.
 
-Steps
+Steps:
 
-Store the first element.
-Shift all elements one position to the left.
-Place the stored element at the end.
-Repeat the above process d times.
+1.Store the first element.
+2.Shift all elements one position to the left.
+3.Place the stored element at the end.
+4.Repeat the above process d times.
 
-Example
+Example:
 
 Array = [1,2,3,4,5]
 d = 2
@@ -57,21 +57,21 @@ After 2 rotations:
 
 [3,4,5,1,2]
 
-Complexity
+Complexity:
 
 Time Complexity : O(n*d)
 
 Space Complexity : O(1)
 
-Better Approach
+Better Approach:
 
 Instead of rotating one position d times:
 
-Store the first d elements in a temporary array.
-Shift the remaining elements to the left.
-Copy the temporary elements to the end.
+1.Store the first d elements in a temporary array.
+2.Shift the remaining elements to the left.
+3.Copy the temporary elements to the end.
 
-Example
+Example:
 
 Array:
 
@@ -89,13 +89,13 @@ Copy temp elements at the end:
 
 [3,4,5,6,7,1,2]
 
-Complexity
+Complexity:
 
 Time Complexity : O(n)
 
 Space Complexity : O(d)
 
-Optimal Approach
+Optimal Approach:
 
 Observation
 
@@ -131,9 +131,9 @@ Time Complexity : O(n)
 
 Space Complexity : O(1)
 
-Common Mistakes
+Common Mistakes:
 
-Mistake 1
+Mistake 1:
 
 Forgetting:
 
@@ -149,7 +149,7 @@ Actual rotation required:
 
 7 % 5 = 2
 
-Mistake 2
+Mistake 2:
 
 Using incorrect reverse boundaries.
 
@@ -161,15 +161,15 @@ reverse(arr, d, n - 1);
 
 reverse(arr, 0, n - 1);
 
-Mistake 3
+Mistake 3:
 
 Confusing Left Rotation and Right Rotation.
 
 Always verify the expected output using a small example.
 
-Code
+Code:
 
-Brute Force Approach
+Brute Force Approach:
 
 public static void leftRotate(int[] arr, int d) {
 
@@ -188,7 +188,7 @@ for (int k = 0; k < d; k++) {
 
 }
 
-Better Approach
+Better Approach:
 
 public static void leftRotate(int[] arr, int d) {
 
@@ -212,7 +212,7 @@ for (int i = 0; i < d; i++) {
 
 }
 
-Optimal Approach
+Optimal Approach:
 
 public static void leftRotate(int[] arr, int d) {
 
@@ -242,7 +242,7 @@ while (left < right) {
 
 }
 
-Problem Link
+Problem Link:
 
 LeetCode 189 - Rotate Array
 
