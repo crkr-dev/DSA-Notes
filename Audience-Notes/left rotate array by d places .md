@@ -1,4 +1,3 @@
-
 Left Rotate Array by D Places
 
 Problem Statement
