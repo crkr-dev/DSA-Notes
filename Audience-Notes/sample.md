@@ -244,13 +244,9 @@ while (left < right) {
 
 Problem Link
 
-Related LeetCode Problem:
+LeetCode 189 - Rotate Array
 
-Rotate Array - LeetCode 189
-
-Note:
-
-LeetCode 189 asks for Right Rotation. Understanding Left Rotation helps in solving Right Rotation as well.
+https://leetcode.com/problems/rotate-array/
 
 YouTube Link
 
